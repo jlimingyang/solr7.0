@@ -1,0 +1,67 @@
+2017-09-22 07:19:51.836 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-22 07:19:52.221 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.0.0
+2017-09-22 07:19:52.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8000
+2017-09-22 07:19:52.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/limingyang/solr7, Default config dir: /Users/limingyang/solr7/server/solr/configsets/_default/conf
+2017-09-22 07:19:52.249 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-22T07:19:52.223Z
+2017-09-22 07:19:52.249 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-09-22 07:19:52.280 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/limingyang/solr7/server/solr
+2017-09-22 07:19:52.288 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/limingyang/solr7/server/solr/solr.xml
+2017-09-22 07:19:53.221 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/limingyang/solr7/server/solr
+2017-09-22 07:19:53.227 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [anh_core]
+2017-09-22 07:19:53.306 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Couldn't add files from /Users/limingyang/solr7/contrib/ltr/lib filtered by .*\.jar to classpath: /Users/limingyang/solr7/contrib/ltr/lib
+2017-09-22 07:19:53.311 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrResourceLoader [anh_core] Added 52 libs to classloader, from paths: [/Users/limingyang/solr7/contrib/clustering/lib, /Users/limingyang/solr7/contrib/extraction/lib, /Users/limingyang/solr7/contrib/langid/lib, /Users/limingyang/solr7/contrib/velocity/lib, /Users/limingyang/solr7/dist]
+2017-09-22 07:19:53.339 INFO  (main) [   ] o.e.j.s.Server Started @2140ms
+2017-09-22 07:19:53.576 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-09-22 07:19:53.579 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.0.0
+2017-09-22 07:19:53.698 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2017-09-22 07:19:53.756 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.IndexSchema [anh_core] Schema name=example
+2017-09-22 07:19:54.401 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2017-09-22 07:19:54.402 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2017-09-22 07:19:54.402 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 07:19:54.402 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 07:19:54.410 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2017-09-22 07:19:54.410 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 07:19:54.410 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 07:19:54.410 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 07:19:54.422 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 07:19:54.458 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.CoreContainer Creating SolrCore 'anh_core' using configuration from instancedir /Users/limingyang/solr7/server/solr/anh_core, trusted=true
+2017-09-22 07:19:54.499 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 07:19:54.506 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrCore [[anh_core] ] Opening new SolrCore at [/Users/limingyang/solr7/server/solr/anh_core], dataDir=[/Users/limingyang/solr7/server/solr/anh_core/data/]
+2017-09-22 07:19:54.542 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-22 07:19:54.808 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-22 07:19:54.808 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-22 07:19:54.817 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-22 07:19:54.817 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 07:19:54.893 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@7078f8ec[anh_core] main]
+2017-09-22 07:19:54.905 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/limingyang/solr7/server/solr/anh_core/conf
+2017-09-22 07:19:54.908 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/limingyang/solr7/server/solr/anh_core/conf
+2017-09-22 07:19:54.908 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2017-09-22 07:19:54.909 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/Users/limingyang/solr7/server/solr/anh_core/conf
+2017-09-22 07:19:54.909 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2017-09-22 07:19:54.909 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2017-09-22 07:19:54.910 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
+2017-09-22 07:19:54.910 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/Users/limingyang/solr7/server/solr/anh_core/conf
+2017-09-22 07:19:54.910 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2017-09-22 07:19:54.911 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2017-09-22 07:19:54.913 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
+2017-09-22 07:19:54.923 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-22 07:19:54.929 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-22 07:19:54.937 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-09-22 07:19:54.940 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2017-09-22 07:19:54.957 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2017-09-22 07:19:54.958 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/limingyang/solr7/server/solr/anh_core/conf/elevate.xml
+2017-09-22 07:19:54.968 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 07:19:55.028 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7078f8ec[anh_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 07:19:55.033 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1579223398516523008
+2017-09-22 07:19:55.102 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=72
+2017-09-22 07:19:55.103 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-22 07:19:55.103 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-22 07:19:55.103 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-09-22 07:19:55.107 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.SolrCore [anh_core] Registered new searcher Searcher@7078f8ec[anh_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 07:23:51.473 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1509791656
+2017-09-22 07:23:51.474 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-09-22 07:23:51.474 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-09-22 07:23:51.474 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-09-22 07:23:51.474 INFO  (ShutdownMonitor) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-22 07:23:51.475 INFO  (coreCloseExecutor-12-thread-1) [   x:anh_core] o.a.s.c.SolrCore [anh_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@46788e33
+2017-09-22 07:23:51.475 INFO  (coreCloseExecutor-12-thread-1) [   x:anh_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.anh_core, tag=1182305843

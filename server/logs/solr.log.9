@@ -1,0 +1,153 @@
+2017-09-22 03:38:56.382 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-22 03:38:56.801 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.0.0
+2017-09-22 03:38:56.801 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8000
+2017-09-22 03:38:56.801 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/limingyang/Library/solr7, Default config dir: /Users/limingyang/Library/solr7/server/solr/configsets/_default/conf
+2017-09-22 03:38:56.814 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-22T03:38:56.802Z
+2017-09-22 03:38:56.815 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-09-22 03:38:56.828 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/limingyang/Library/solr7/server/solr
+2017-09-22 03:38:56.835 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/limingyang/Library/solr7/server/solr/solr.xml
+2017-09-22 03:38:57.534 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/limingyang/Library/solr7/server/solr
+2017-09-22 03:38:57.538 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [anh_core]
+2017-09-22 03:38:57.613 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Couldn't add files from /Users/limingyang/Library/solr7/contrib/ltr/lib filtered by .*\.jar to classpath: /Users/limingyang/Library/solr7/contrib/ltr/lib
+2017-09-22 03:38:57.617 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrResourceLoader [anh_core] Added 52 libs to classloader, from paths: [/Users/limingyang/Library/solr7/contrib/clustering/lib, /Users/limingyang/Library/solr7/contrib/extraction/lib, /Users/limingyang/Library/solr7/contrib/langid/lib, /Users/limingyang/Library/solr7/contrib/velocity/lib, /Users/limingyang/Library/solr7/dist]
+2017-09-22 03:38:57.621 INFO  (main) [   ] o.e.j.s.Server Started @2036ms
+2017-09-22 03:38:57.773 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-09-22 03:38:57.775 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.0.0
+2017-09-22 03:38:57.932 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2017-09-22 03:38:58.001 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.IndexSchema [anh_core] Schema name=example
+2017-09-22 03:38:58.523 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2017-09-22 03:38:58.524 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2017-09-22 03:38:58.524 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 03:38:58.524 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 03:38:58.532 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2017-09-22 03:38:58.532 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 03:38:58.532 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 03:38:58.532 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2017-09-22 03:38:58.532 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2017-09-22 03:38:58.584 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.CoreContainer Creating SolrCore 'anh_core' using configuration from instancedir /Users/limingyang/Library/solr7/server/solr/anh_core, trusted=true
+2017-09-22 03:38:58.617 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-22 03:38:58.622 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrCore [[anh_core] ] Opening new SolrCore at [/Users/limingyang/Library/solr7/server/solr/anh_core], dataDir=[/Users/limingyang/Library/solr7/server/solr/anh_core/data/]
+2017-09-22 03:38:58.652 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-22 03:38:58.896 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-22 03:38:58.897 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-22 03:38:58.908 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-22 03:38:58.908 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-22 03:38:58.995 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2666e26f[anh_core] main]
+2017-09-22 03:38:59.013 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/limingyang/Library/solr7/server/solr/anh_core/conf
+2017-09-22 03:38:59.018 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/limingyang/Library/solr7/server/solr/anh_core/conf
+2017-09-22 03:38:59.018 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2017-09-22 03:38:59.020 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/Users/limingyang/Library/solr7/server/solr/anh_core/conf
+2017-09-22 03:38:59.020 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2017-09-22 03:38:59.021 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2017-09-22 03:38:59.021 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
+2017-09-22 03:38:59.028 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/Users/limingyang/Library/solr7/server/solr/anh_core/conf
+2017-09-22 03:38:59.028 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2017-09-22 03:38:59.029 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2017-09-22 03:38:59.033 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
+2017-09-22 03:38:59.044 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-22 03:38:59.054 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-22 03:38:59.064 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-09-22 03:38:59.067 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2017-09-22 03:38:59.081 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2017-09-22 03:38:59.082 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/limingyang/Library/solr7/server/solr/anh_core/conf/elevate.xml
+2017-09-22 03:38:59.092 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-22 03:38:59.142 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2666e26f[anh_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 03:38:59.148 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1579209498712604672
+2017-09-22 03:38:59.196 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=51
+2017-09-22 03:38:59.197 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-22 03:38:59.197 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-22 03:38:59.197 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-09-22 03:38:59.201 INFO  (searcherExecutor-7-thread-1-processing-x:anh_core) [   x:anh_core] o.a.s.c.SolrCore [anh_core] Registered new searcher Searcher@2666e26f[anh_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-22 03:39:29.493 INFO  (qtp257895351-21) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-22 03:39:30.073 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051569849} status=0 QTime=1
+2017-09-22 03:39:30.115 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051569849} status=0 QTime=37
+2017-09-22 03:39:30.167 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051569849} status=0 QTime=19
+2017-09-22 03:39:33.533 INFO  (qtp257895351-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051569849} status=0 QTime=0
+2017-09-22 03:39:33.540 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1506051573504} status=0 QTime=4
+2017-09-22 03:39:33.552 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506051573504} status=0 QTime=2
+2017-09-22 03:39:33.604 INFO  (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051569849} status=0 QTime=61
+2017-09-22 03:39:33.616 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/system params={wt=json&_=1506051573504} status=0 QTime=45
+2017-09-22 03:39:33.642 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506051569850&ts=1506051569850} status=503 QTime=2
+2017-09-22 03:39:34.882 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051569849} status=0 QTime=0
+2017-09-22 03:39:34.895 INFO  (qtp257895351-21) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506051573504} status=0 QTime=4
+2017-09-22 03:39:34.979 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051569849} status=0 QTime=96
+2017-09-22 03:43:13.020 INFO  (qtp257895351-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:43:13.025 INFO  (qtp257895351-17) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506051793002} status=0 QTime=2
+2017-09-22 03:43:13.048 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=26
+2017-09-22 03:43:26.717 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:43:26.783 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=61
+2017-09-22 03:43:26.825 INFO  (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=32
+2017-09-22 03:43:33.000 INFO  (qtp257895351-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:43:33.008 INFO  (qtp257895351-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1506051812985&since=0} status=0 QTime=1
+2017-09-22 03:43:33.032 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=31
+2017-09-22 03:43:42.997 INFO  (qtp257895351-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1506051812985&since=0} status=0 QTime=0
+2017-09-22 03:43:52.998 INFO  (qtp257895351-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1506051812985&since=0} status=0 QTime=0
+2017-09-22 03:43:59.847 INFO  (qtp257895351-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:43:59.852 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506051793002} status=0 QTime=0
+2017-09-22 03:43:59.858 INFO  (qtp257895351-19) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1506051839823} status=0 QTime=0
+2017-09-22 03:43:59.874 INFO  (qtp257895351-19) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506051792863&ts=1506051792863} status=503 QTime=0
+2017-09-22 03:43:59.916 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=62
+2017-09-22 03:43:59.920 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/system params={wt=json&_=1506051839822} status=0 QTime=52
+2017-09-22 03:44:01.498 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:44:01.508 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506051793002} status=0 QTime=3
+2017-09-22 03:44:01.544 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=43
+2017-09-22 03:46:39.645 INFO  (qtp257895351-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:46:39.655 INFO  (qtp257895351-21) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1506051839823} status=0 QTime=0
+2017-09-22 03:46:39.686 INFO  (qtp257895351-19) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506051792863&ts=1506051792863} status=503 QTime=0
+2017-09-22 03:46:39.702 INFO  (qtp257895351-17) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506051793002} status=0 QTime=0
+2017-09-22 03:46:39.774 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/system params={wt=json&_=1506051839822} status=0 QTime=102
+2017-09-22 03:46:39.774 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=79
+2017-09-22 03:47:00.367 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:00.392 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=25
+2017-09-22 03:47:00.438 INFO  (qtp257895351-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=35
+2017-09-22 03:47:02.525 INFO  (qtp257895351-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:02.535 INFO  (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1506051812985&since=0} status=0 QTime=0
+2017-09-22 03:47:02.554 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=25
+2017-09-22 03:47:06.655 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:06.669 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:06.692 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=30
+2017-09-22 03:47:06.736 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:06.737 INFO  (qtp257895351-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:06.760 INFO  (qtp257895351-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=24
+2017-09-22 03:47:08.357 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:08.369 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1506051812985&since=0} status=0 QTime=0
+2017-09-22 03:47:08.438 INFO  (qtp257895351-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=75
+2017-09-22 03:47:09.928 INFO  (qtp257895351-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506051792862} status=0 QTime=0
+2017-09-22 03:47:09.940 INFO  (qtp257895351-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1506052029915} status=0 QTime=0
+2017-09-22 03:47:09.964 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506051792863} status=0 QTime=35
+2017-09-22 03:48:25.114 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:25.123 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1506052105098} status=0 QTime=0
+2017-09-22 03:48:25.146 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=30
+2017-09-22 03:48:29.362 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1506052109334} status=0 QTime=0
+2017-09-22 03:48:29.364 INFO  (qtp257895351-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:29.367 INFO  (qtp257895351-21) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1506052109334} status=0 QTime=0
+2017-09-22 03:48:29.387 INFO  (qtp257895351-16) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1506052104949&ts=1506052104949} status=503 QTime=0
+2017-09-22 03:48:29.409 INFO  (qtp257895351-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=41
+2017-09-22 03:48:29.411 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/system params={wt=json&_=1506052109334} status=0 QTime=34
+2017-09-22 03:48:33.030 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:33.053 INFO  (qtp257895351-14) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1506052112989} status=0 QTime=1
+2017-09-22 03:48:33.074 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=41
+2017-09-22 03:48:33.112 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:33.148 INFO  (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=30
+2017-09-22 03:48:33.172 INFO  (qtp257895351-16) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1506052112989} status=0 QTime=0
+2017-09-22 03:48:33.927 INFO  (qtp257895351-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:33.954 INFO  (qtp257895351-14) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506052109334} status=0 QTime=1
+2017-09-22 03:48:33.977 INFO  (qtp257895351-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=51
+2017-09-22 03:48:35.711 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:48:35.737 INFO  (qtp257895351-15) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506052109334} status=0 QTime=1
+2017-09-22 03:48:35.768 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=55
+2017-09-22 03:49:09.717 INFO  (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:49:09.730 INFO  (qtp257895351-18) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506052109334} status=0 QTime=1
+2017-09-22 03:49:09.753 INFO  (qtp257895351-14) [   x:anh_core] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2017-09-22 03:49:09.778 INFO  (qtp257895351-14) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=我爱传智播客&analysis.fieldname=content&analysis.showmatch=true&verbose_output=1&wt=json&_=1506052115687} status=0 QTime=25
+2017-09-22 03:49:09.795 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=71
+2017-09-22 03:49:16.635 INFO  (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052104948} status=0 QTime=0
+2017-09-22 03:49:16.642 INFO  (qtp257895351-12) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1506052109334} status=0 QTime=1
+2017-09-22 03:49:16.676 INFO  (qtp257895351-13) [   x:anh_core] o.a.s.c.S.Request [anh_core]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=我爱传智播客&analysis.fieldname=content_type&analysis.showmatch=true&verbose_output=1&wt=json&_=1506052115687} status=0 QTime=0
+2017-09-22 03:49:16.689 INFO  (qtp257895351-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052104949} status=0 QTime=47
+2017-09-22 03:52:18.992 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=447981768
+2017-09-22 03:52:18.993 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-09-22 03:52:18.993 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-09-22 03:52:18.993 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2017-09-22 03:52:18.994 INFO  (coreCloseExecutor-12-thread-1) [   x:anh_core] o.a.s.c.SolrCore [anh_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@3d1b3fd9
+2017-09-22 03:52:18.994 INFO  (coreCloseExecutor-12-thread-1) [   x:anh_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.anh_core, tag=1025195993

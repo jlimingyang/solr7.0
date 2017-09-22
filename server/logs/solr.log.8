@@ -1,0 +1,193 @@
+2017-09-22 03:52:33.261 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-22 03:52:33.611 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.0.0
+2017-09-22 03:52:33.611 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8000
+2017-09-22 03:52:33.611 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/limingyang/Library/solr7, Default config dir: /Users/limingyang/Library/solr7/server/solr/configsets/_default/conf
+2017-09-22 03:52:33.625 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-22T03:52:33.612Z
+2017-09-22 03:52:33.626 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-09-22 03:52:33.641 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/limingyang/Library/solr7/server/solr
+2017-09-22 03:52:33.647 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/limingyang/Library/solr7/server/solr/solr.xml
+2017-09-22 03:52:34.376 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/limingyang/Library/solr7/server/solr
+2017-09-22 03:52:34.380 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [anh_core]
+2017-09-22 03:52:34.447 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Couldn't add files from /Users/limingyang/Library/solr7/contrib/ltr/lib filtered by .*\.jar to classpath: /Users/limingyang/Library/solr7/contrib/ltr/lib
+2017-09-22 03:52:34.452 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrResourceLoader [anh_core] Added 52 libs to classloader, from paths: [/Users/limingyang/Library/solr7/contrib/clustering/lib, /Users/limingyang/Library/solr7/contrib/extraction/lib, /Users/limingyang/Library/solr7/contrib/langid/lib, /Users/limingyang/Library/solr7/contrib/velocity/lib, /Users/limingyang/Library/solr7/dist]
+2017-09-22 03:52:34.454 INFO  (main) [   ] o.e.j.s.Server Started @1671ms
+2017-09-22 03:52:34.592 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-09-22 03:52:34.596 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.0.0
+2017-09-22 03:52:34.694 WARN  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2017-09-22 03:52:34.744 INFO  (coreLoadExecutor-6-thread-1) [   x:anh_core] o.a.s.s.IndexSchema [anh_core] Schema name=example
+2017-09-22 03:52:35.212 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [anh_core]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer.lambda$load$118(CoreContainer.java:647)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:176)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$128(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [anh_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:996)
+	at org.apache.solr.core.CoreContainer.lambda$load$117(CoreContainer.java:619)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core anh_core: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:976)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:578)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:175)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:194)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:469)
+	... 15 more
+Caused by: java.lang.RuntimeException: Can't set positionIncrementGap on custom analyzer class org.wltea.analyzer.lucene.IKAnalyzer
+	at org.apache.solr.schema.FieldType.setArgs(FieldType.java:191)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:165)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:53)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:191)
+	... 16 more
+2017-09-22 03:52:40.996 INFO  (qtp257895351-14) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-22 03:52:41.501 ERROR (qtp257895351-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'anh_core' is not available due to init failure: Could not load conf for core anh_core: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1403)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:267)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:480)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:378)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:322)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core anh_core: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:976)
+	at org.apache.solr.core.CoreContainer.lambda$load$117(CoreContainer.java:619)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$128(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:578)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:175)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:194)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:469)
+	... 15 more
+Caused by: java.lang.RuntimeException: Can't set positionIncrementGap on custom analyzer class org.wltea.analyzer.lucene.IKAnalyzer
+	at org.apache.solr.schema.FieldType.setArgs(FieldType.java:191)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:165)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:53)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:191)
+	... 16 more
+
+2017-09-22 03:52:41.501 ERROR (qtp257895351-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'anh_core' is not available due to init failure: Could not load conf for core anh_core: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1403)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:267)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:480)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:378)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:322)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core anh_core: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:976)
+	at org.apache.solr.core.CoreContainer.lambda$load$117(CoreContainer.java:619)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$128(ExecutorUtil.java:188)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /Users/limingyang/Library/solr7/server/solr/anh_core/conf/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:578)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:175)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:194)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:469)
+	... 15 more
+Caused by: java.lang.RuntimeException: Can't set positionIncrementGap on custom analyzer class org.wltea.analyzer.lucene.IKAnalyzer
+	at org.apache.solr.schema.FieldType.setArgs(FieldType.java:191)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:165)
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:53)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:191)
+	... 16 more
+
+2017-09-22 03:52:41.509 INFO  (qtp257895351-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1506052361335} status=0 QTime=32
+2017-09-22 03:52:41.541 INFO  (qtp257895351-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1506052361335} status=0 QTime=62
+2017-09-22 03:55:27.029 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=447981768
+2017-09-22 03:55:27.029 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2017-09-22 03:55:27.029 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2017-09-22 03:55:27.029 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
